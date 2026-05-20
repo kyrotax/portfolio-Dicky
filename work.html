@@ -58,62 +58,114 @@
       <button class="filter-btn" data-filter="hackathon" style="background:none; border:none; color:var(--muted); font-family:var(--font-sans); cursor:pointer;">Hackathon</button>
     </div>
 
-    <div class="editorial-list" id="work-grid">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="work-grid">
 
-      <!-- GRINBUDS -->
-      <a href="https://grinbuds2.vercel.app/" target="_blank" rel="noopener noreferrer" id="grinbuds" class="editorial-row reveal" data-categories="ai-ml full-stack" aria-label="GRINBUDS project">
-        <div class="row-num">01</div>
-        <div class="row-content">
-          <p class="project-category">AI/ML · Full-Stack · EdTech</p>
-          <h2 class="row-title">GRINBUDS</h2>
-          <p class="row-desc">"When Duolingo Isn't Enough for Indonesian Kids" — A gamified reading platform teaching children letters and syllables through interactive mini-games, with AI dyslexia detection tracking confusion patterns.</p>
-          <div class="row-tags">
-            <span>Next.js</span> <span>FastAPI</span> <span>Supabase</span>
-          </div>
+      <!-- Card 1: GRINBUDS -->
+      <a href="https://grinbuds2.vercel.app/" target="_blank" rel="noopener noreferrer" class="editorial-row block rounded-xl border border-white/10 overflow-hidden group cursor-pointer" data-categories="ai-ml full-stack" aria-label="GRINBUDS project">
+        <div class="w-full h-56 overflow-hidden">
+          <img
+            src="/assets/image/grinbuds.png"
+            alt="GRINBUDS preview"
+            class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+          />
         </div>
-        <div class="row-arrow">↗</div>
+        <div class="p-5 flex justify-between items-start gap-4">
+          <div class="flex-1">
+            <p class="text-xs text-white/30 mb-1">01</p>
+            <p class="text-xs text-white/40 uppercase tracking-widest mb-2">AI/ML · EdTech</p>
+            <h3 class="text-lg font-medium text-white mb-2">GRINBUDS</h3>
+            <p class="text-sm text-white/50 leading-relaxed mb-4">
+              Gamified reading platform with early dyslexia detection and real-time analytics.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs px-3 py-1 rounded-full border border-white/10 text-white/40">Next.js</span>
+              <span class="text-xs px-3 py-1 rounded-full border border-white/10 text-white/40">FastAPI</span>
+              <span class="text-xs px-3 py-1 rounded-full border border-white/10 text-white/40">Supabase</span>
+            </div>
+          </div>
+          <div class="text-white/30 text-xl mt-1">↗</div>
+        </div>
       </a>
 
-      <!-- TITIK -->
-      <a href="https://titik-demo.vercel.app" target="_blank" rel="noopener noreferrer" id="titik" class="editorial-row reveal" data-categories="ai-ml full-stack hackathon" aria-label="TITIK project">
-        <div class="row-num">02</div>
-        <div class="row-content">
-          <p class="project-category">AI/ML · Full-Stack · Hackathon</p>
-          <h2 class="row-title">TITIK</h2>
-          <p class="row-desc">"From Photo to Map in 10 Seconds" — A mobile-first web app for reporting illegal waste dumps. Google Gemini Vision AI analyzes waste type and drops a color-coded marker on an interactive Leaflet map.</p>
-          <div class="row-tags">
-            <span>Next.js</span> <span>Gemini Vision</span> <span>Leaflet.js</span>
-          </div>
+      <!-- Card 2: TITIK -->
+      <a href="https://titik-demo.vercel.app" target="_blank" rel="noopener noreferrer" class="editorial-row block rounded-xl border border-white/10 overflow-hidden group cursor-pointer" data-categories="ai-ml full-stack hackathon" aria-label="TITIK project">
+        <div class="w-full h-56 overflow-hidden">
+          <img
+            src="/assets/image/titik.png"
+            alt="TITIK preview"
+            class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+          />
         </div>
-        <div class="row-arrow">↗</div>
+        <div class="p-5 flex justify-between items-start gap-4">
+          <div class="flex-1">
+            <p class="text-xs text-white/30 mb-1">02</p>
+            <p class="text-xs text-white/40 uppercase tracking-widest mb-2">AI/ML · Civic Tech</p>
+            <h3 class="text-lg font-medium text-white mb-2">TITIK</h3>
+            <p class="text-sm text-white/50 leading-relaxed mb-4">
+              From photo to map in 10 seconds. AI-powered illegal waste reporting app.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs px-3 py-1 rounded-full border border-white/10 text-white/40">Next.js</span>
+              <span class="text-xs px-3 py-1 rounded-full border border-white/10 text-white/40">Gemini Vision</span>
+              <span class="text-xs px-3 py-1 rounded-full border border-white/10 text-white/40">Leaflet.js</span>
+            </div>
+          </div>
+          <div class="text-white/30 text-xl mt-1">↗</div>
+        </div>
       </a>
 
-      <!-- VELOCE SHOWROOM -->
-      <a href="https://veloce-motors-ets.netlify.app/" target="_blank" rel="noopener noreferrer" id="veloce" class="editorial-row reveal" data-categories="frontend" aria-label="Veloce Showroom project">
-        <div class="row-num">03</div>
-        <div class="row-content">
-          <p class="project-category">Frontend · UI/UX</p>
-          <h2 class="row-title">Veloce Showroom</h2>
-          <p class="row-desc">"A Luxury Car Showroom That Actually Feels Luxurious" — A premium web app with BMW-style sidebar filtering, dark glassmorphism UI built entirely from scratch, and real-time order configuration.</p>
-          <div class="row-tags">
-            <span>HTML5</span> <span>Vanilla JS</span> <span>CSS3</span>
-          </div>
+      <!-- Card 3: Veloce Showroom -->
+      <a href="https://veloce-motors-ets.netlify.app/" target="_blank" rel="noopener noreferrer" class="editorial-row block rounded-xl border border-white/10 overflow-hidden group cursor-pointer" data-categories="frontend" aria-label="Veloce Showroom project">
+        <div class="w-full h-56 overflow-hidden">
+          <img
+            src="/assets/image/veloce.png"
+            alt="Veloce Showroom preview"
+            class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+          />
         </div>
-        <div class="row-arrow">↗</div>
+        <div class="p-5 flex justify-between items-start gap-4">
+          <div class="flex-1">
+            <p class="text-xs text-white/30 mb-1">03</p>
+            <p class="text-xs text-white/40 uppercase tracking-widest mb-2">Frontend · UI/UX</p>
+            <h3 class="text-lg font-medium text-white mb-2">Veloce Showroom</h3>
+            <p class="text-sm text-white/50 leading-relaxed mb-4">
+              A premium luxury car showroom web app. Dark glassmorphism, fluid filtering.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs px-3 py-1 rounded-full border border-white/10 text-white/40">HTML5</span>
+              <span class="text-xs px-3 py-1 rounded-full border border-white/10 text-white/40">Vanilla JS</span>
+              <span class="text-xs px-3 py-1 rounded-full border border-white/10 text-white/40">CSS</span>
+            </div>
+          </div>
+          <div class="text-white/30 text-xl mt-1">↗</div>
+        </div>
       </a>
 
-      <!-- MIA UMKM -->
-      <a href="https://mia-topaz-theta.vercel.app" target="_blank" rel="noopener noreferrer" id="mia" class="editorial-row reveal" data-categories="full-stack frontend" aria-label="MIA UMKM project">
-        <div class="row-num">04</div>
-        <div class="row-content">
-          <p class="project-category">Full-Stack · Frontend</p>
-          <h2 class="row-title">MIA UMKM</h2>
-          <p class="row-desc">"Like Google Maps, But for Local Businesses" — A directory platform helping users discover local SMEs by category with smart search, rating system, and a clean professional UI.</p>
-          <div class="row-tags">
-            <span>React 19</span> <span>Tailwind CSS</span> <span>React Router</span>
-          </div>
+      <!-- Card 4: MIA UMKM -->
+      <a href="https://mia-topaz-theta.vercel.app" target="_blank" rel="noopener noreferrer" class="editorial-row block rounded-xl border border-white/10 overflow-hidden group cursor-pointer" data-categories="full-stack frontend" aria-label="MIA UMKM project">
+        <div class="w-full h-56 overflow-hidden">
+          <img
+            src="/assets/image/mia.png"
+            alt="MIA UMKM preview"
+            class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+          />
         </div>
-        <div class="row-arrow">↗</div>
+        <div class="p-5 flex justify-between items-start gap-4">
+          <div class="flex-1">
+            <p class="text-xs text-white/30 mb-1">04</p>
+            <p class="text-xs text-white/40 uppercase tracking-widest mb-2">Full-Stack · Frontend</p>
+            <h3 class="text-lg font-medium text-white mb-2">MIA UMKM</h3>
+            <p class="text-sm text-white/50 leading-relaxed mb-4">
+              Like Google Maps, but for local businesses. Smart search, rating system, clean UI.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs px-3 py-1 rounded-full border border-white/10 text-white/40">React 19</span>
+              <span class="text-xs px-3 py-1 rounded-full border border-white/10 text-white/40">Tailwind</span>
+              <span class="text-xs px-3 py-1 rounded-full border border-white/10 text-white/40">React Router</span>
+            </div>
+          </div>
+          <div class="text-white/30 text-xl mt-1">↗</div>
+        </div>
       </a>
 
     </div>
@@ -123,7 +175,7 @@
   <footer role="contentinfo">
     <div class="footer-left">
       <p>Built with coffee, productive frustration, and Tailwind CSS.</p>
-      <p>© 2025 Dicky Karillo Redinata</p>
+      <p>© 2026 Dicky Karillo Redinata</p>
     </div>
     <ul class="footer-links" role="list">
       <li><a href="https://github.com/kyrotax" target="_blank" rel="noopener noreferrer">GitHub</a></li>
