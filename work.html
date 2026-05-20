@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Dicky Karillo Redinata</title>
+  <meta name="description" content="Dicky's projects: AI waste detection (hackathon), gamified EdTech with dyslexia detection, luxury car showroom UI, and a local SME directory. Full stack, real deployments." />
+
+  <meta property="og:title" content="Projects — Dicky Karillo Redinata" />
+  <meta property="og:description" content="Full-stack projects built and shipped by Dicky Karillo Redinata." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://api.fontshare.com" />
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@900,800,700,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">DKR</a>
+    <button class="nav-mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="index.html#contact" class="cta-link">Let's Talk →</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header style="padding: 10rem 2rem 4rem; max-width: 1200px; margin: 0 auto;">
+    <p class="section-label reveal">All projects</p>
+    <h1 class="section-title reveal reveal-delay-1" style="font-size: clamp(2.5rem, 6vw, 5rem);">
+      Things I've<br/>Actually Built
+    </h1>
+    <p class="reveal reveal-delay-2" style="color: var(--muted); max-width: 480px; margin-top: 1rem; font-size: 0.95rem; line-height: 1.7;">
+      Four projects. Four different problems. Zero drag-and-drop page builders.
+    </p>
+  </header>
+
+  <!-- FILTER BAR (Editorial Style) -->
+  <div class="section-container" style="padding-top: 0;">
+    <div class="filter-bar reveal" role="group" aria-label="Filter projects by category" style="border-bottom: 1px solid rgba(244,240,234,0.1); padding-bottom: 2rem; margin-bottom: 2rem; display: flex; gap: 2rem;">
+      <button class="filter-btn active" data-filter="all" style="background:none; border:none; color:var(--paper); font-family:var(--font-sans); cursor:pointer;">All</button>
+      <button class="filter-btn" data-filter="ai-ml" style="background:none; border:none; color:var(--muted); font-family:var(--font-sans); cursor:pointer;">AI/ML</button>
+      <button class="filter-btn" data-filter="full-stack" style="background:none; border:none; color:var(--muted); font-family:var(--font-sans); cursor:pointer;">Full-Stack</button>
+      <button class="filter-btn" data-filter="frontend" style="background:none; border:none; color:var(--muted); font-family:var(--font-sans); cursor:pointer;">Frontend</button>
+      <button class="filter-btn" data-filter="hackathon" style="background:none; border:none; color:var(--muted); font-family:var(--font-sans); cursor:pointer;">Hackathon</button>
+    </div>
+
+    <div class="editorial-list" id="work-grid">
+
+      <!-- GRINBUDS -->
+      <a href="https://grinbuds2.vercel.app/" target="_blank" rel="noopener noreferrer" id="grinbuds" class="editorial-row reveal" data-categories="ai-ml full-stack" aria-label="GRINBUDS project">
+        <div class="row-num">01</div>
+        <div class="row-content">
+          <p class="project-category">AI/ML · Full-Stack · EdTech</p>
+          <h2 class="row-title">GRINBUDS</h2>
+          <p class="row-desc">"When Duolingo Isn't Enough for Indonesian Kids" — A gamified reading platform teaching children letters and syllables through interactive mini-games, with AI dyslexia detection tracking confusion patterns.</p>
+          <div class="row-tags">
+            <span>Next.js</span> <span>FastAPI</span> <span>Supabase</span>
+          </div>
+        </div>
+        <div class="row-arrow">↗</div>
+      </a>
+
+      <!-- TITIK -->
+      <a href="https://titik-demo.vercel.app" target="_blank" rel="noopener noreferrer" id="titik" class="editorial-row reveal" data-categories="ai-ml full-stack hackathon" aria-label="TITIK project">
+        <div class="row-num">02</div>
+        <div class="row-content">
+          <p class="project-category">AI/ML · Full-Stack · Hackathon</p>
+          <h2 class="row-title">TITIK</h2>
+          <p class="row-desc">"From Photo to Map in 10 Seconds" — A mobile-first web app for reporting illegal waste dumps. Google Gemini Vision AI analyzes waste type and drops a color-coded marker on an interactive Leaflet map.</p>
+          <div class="row-tags">
+            <span>Next.js</span> <span>Gemini Vision</span> <span>Leaflet.js</span>
+          </div>
+        </div>
+        <div class="row-arrow">↗</div>
+      </a>
+
+      <!-- VELOCE SHOWROOM -->
+      <a href="https://veloce-motors-ets.netlify.app/" target="_blank" rel="noopener noreferrer" id="veloce" class="editorial-row reveal" data-categories="frontend" aria-label="Veloce Showroom project">
+        <div class="row-num">03</div>
+        <div class="row-content">
+          <p class="project-category">Frontend · UI/UX</p>
+          <h2 class="row-title">Veloce Showroom</h2>
+          <p class="row-desc">"A Luxury Car Showroom That Actually Feels Luxurious" — A premium web app with BMW-style sidebar filtering, dark glassmorphism UI built entirely from scratch, and real-time order configuration.</p>
+          <div class="row-tags">
+            <span>HTML5</span> <span>Vanilla JS</span> <span>CSS3</span>
+          </div>
+        </div>
+        <div class="row-arrow">↗</div>
+      </a>
+
+      <!-- MIA UMKM -->
+      <a href="https://mia-topaz-theta.vercel.app" target="_blank" rel="noopener noreferrer" id="mia" class="editorial-row reveal" data-categories="full-stack frontend" aria-label="MIA UMKM project">
+        <div class="row-num">04</div>
+        <div class="row-content">
+          <p class="project-category">Full-Stack · Frontend</p>
+          <h2 class="row-title">MIA UMKM</h2>
+          <p class="row-desc">"Like Google Maps, But for Local Businesses" — A directory platform helping users discover local SMEs by category with smart search, rating system, and a clean professional UI.</p>
+          <div class="row-tags">
+            <span>React 19</span> <span>Tailwind CSS</span> <span>React Router</span>
+          </div>
+        </div>
+        <div class="row-arrow">↗</div>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="footer-left">
+      <p>Built with coffee, productive frustration, and Tailwind CSS.</p>
+      <p>© 2025 Dicky Karillo Redinata</p>
+    </div>
+    <ul class="footer-links" role="list">
+      <li><a href="https://github.com/kyrotax" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/dicky-karillo-redinata-17334a2a5/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="mailto:medickypersonal@gmail.com">Email</a></li>
+    </ul>
+  </footer>
+
+  <button class="scroll-top-btn" aria-label="Scroll to top">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+
+  <script type="module" src="/assets/js/main.js"></script>
+  <script>
+    // Filter logic
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const cards = document.querySelectorAll('.editorial-row');
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.dataset.filter;
+
+          filterBtns.forEach(b => {
+            b.classList.remove('active');
+            b.style.color = 'var(--muted)';
+          });
+          btn.classList.add('active');
+          btn.style.color = 'var(--paper)';
+
+          cards.forEach(card => {
+            const categories = card.dataset.categories || '';
+            if (filter === 'all' || categories.includes(filter)) {
+              card.style.display = '';
+              card.setAttribute('data-hidden', 'false');
+            } else {
+              card.style.display = 'none';
+              card.setAttribute('data-hidden', 'true');
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
